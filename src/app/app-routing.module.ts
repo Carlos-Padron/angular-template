@@ -15,6 +15,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'catalogos/clientes',
+    loadChildren: () =>
+      import('./modules/catalogos/clientes/clientes.module').then(
+        (m) => m.ClientesModule
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'dashboard',
   },

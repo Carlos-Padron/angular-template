@@ -1,0 +1,12 @@
+<dialog #modal class="modal">
+  <div method="dialog" class="modal-box {{ modalSize }} max-w-5xl">
+    <h3 class="font-bold text-lg">Confirmación requerida</h3>
+    <div class="">Contenido</div>
+    <div class="modal-action">
+      <button class="btn" (click)="closeModal('REJECTED')">Close</button>
+      <button class="btn btn-primary" (click)="closeModal('ACCEPTED')">
+        Confirmar
+      </button>
+    </div>
+  </div>
+</dialog>

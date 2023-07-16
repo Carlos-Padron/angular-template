@@ -4,6 +4,8 @@ import { LoginPageComponent } from './authentication/login-page/login-page.compo
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TemplateComponent } from './template/template.component';
+import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,7 @@ import { TemplateComponent } from './template/template.component';
     NavbarComponent,
     TemplateComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule, SharedModule],
   exports: [TemplateComponent],
 })
 export class CoreModule {}

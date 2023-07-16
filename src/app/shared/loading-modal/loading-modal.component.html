@@ -1,0 +1,8 @@
+<button class="btn" (click)="openModal()">open modal</button>
+<dialog #modal class="modal">
+  <div method="dialog" class="modal-box max-w-xs flex flex-col justify-center items-center">
+    <h3 class="font-bold text-lg">{{ message }}</h3>
+    <!-- <span class="loading loading-infinity loading-lg"></span> -->
+    <progress class="progress w-56 mt-3"></progress>
+  </div>
+</dialog>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -19,7 +20,7 @@ import { Component } from '@angular/core';
         background-color: #0f2a42;
         color: white;
       }
-      
+
       summary:hover a {
         background-color: #0f2a42;
         color: white;
@@ -27,4 +28,16 @@ import { Component } from '@angular/core';
     `,
   ],
 })
-export class SidebarComponent {}
+export class SidebarComponent implements OnInit {
+  activeSubmenu = '';
+
+  constructor(private activatedRoute: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.activatedRoute.data
+      .subscribe((submenu) => {
+        this.activeSubmenu = submenu['menu'];
+      })
+      .unsubscribe();
+  }
+}

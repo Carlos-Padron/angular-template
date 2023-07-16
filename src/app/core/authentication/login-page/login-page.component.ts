@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class LoginPageComponent {
 
+
+  func() {
+    window.location.href = '/dashboard'
+  }
+
 }

@@ -1,40 +1,47 @@
-
-
 <div class="w-screen h-screen bg-sky-50 flex justify-center items-center">
   <div class="card-wrapper">
-    <div class="card w-96 bg-base-100 shadow-md">
-      <div class="card-body">
-        <img
-          class="h-10 w-auto"
-          src="https://angular-material.fusetheme.com/assets/images/logo/logo.svg"
-          alt=""
+    <app-card width="w-96">
+      <!-- <div class="card w-96 bg-base-100 shadow-md">
+      <div class="card-body"> -->
+      <img
+        class="h-10 w-auto"
+        src="https://angular-material.fusetheme.com/assets/images/logo/logo.svg"
+        alt=""
+      />
+      <h1 class="font-bold text-4xl">Inicia Sesión</h1>
+
+      <form>
+        <p for="email" class="text-sm mb-1">Correo electrónico:</p>
+        <input
+          id="email"
+          type="text"
+          class="input input-bordered rounded-md input-md focus:outline-1 w-full max-w-xs"
         />
-        <h1 class="font-bold text-4xl">Inicia Sesión</h1>
+        <small class="text-xs text-error invisible">s</small>
+        <p for="email" class="text-sm mb-1">Contraseña:</p>
+        <input
+          id="email"
+          type="text"
+          class="input input-bordered rounded-md input-md focus:outline-1 w-full max-w-xs"
+        />
+        <small class="text-xs text-error invisible">s</small>
 
-        <form>
-          <p for="email" class="text-sm mb-1">Correo electrónico:</p>
-          <input
-            id="email"
-            type="text"
-            class="input input-bordered rounded-md input-md focus:outline-1 w-full max-w-xs"
-          />
-          <small class="text-xs text-error invisible">s</small>
-          <p for="email" class="text-sm mb-1">Contraseña:</p>
-          <input
-            id="email"
-            type="text"
-            class="input input-bordered rounded-md input-md focus:outline-1 w-full max-w-xs"
-          />
-          <small class="text-xs text-error invisible">s</small>
+        <div class="w-full">
+          <p class="text-sky-500 text-xs font-medium cursor-pointer">
+            Olvidaste tu contraseña?
+          </p>
+        </div>
+        <button
+          type="button"
+          (click)="func()"
+          class="btn btn-primary w-full mt-4"
+        >
+          Iniciar sesión
+        </button>
+      </form>
 
-          <div class="w-full">
-            <p class="text-sky-500 text-xs font-medium cursor-pointer">
-              Olvidaste tu contraseña?
-            </p>
-          </div>
-          <button class="btn btn-primary w-full mt-4">Iniciar sesión</button>
-        </form>
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
+    </app-card>
   </div>
 </div>
