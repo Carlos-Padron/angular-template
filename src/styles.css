@@ -2,3 +2,94 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page {
+  margin: 2.5rem;
+  width: calc(100vw - 5rem);
+}
+
+/* Tables */
+
+@layer utilities {
+  table.table-primary {
+    @apply border-separate border-spacing-0 rounded-2xl shadow-md;
+  }
+
+  table.table-primary thead {
+    @apply h-14
+  }
+
+  table.table-primary th {
+    @apply bg-primary text-white m-0 p-3;
+  }
+
+  table.table-primary tr,
+  table.table-primary td {
+    @apply p-3;
+  }
+
+  table.table-primary thead th:first-child {
+    @apply rounded-tl-2xl;
+  }
+
+  table.table-primary thead th:last-child {
+    @apply rounded-tr-2xl;
+  }
+
+  table.table-primary tbody tr:last-child td:first-child {
+    @apply rounded-bl-2xl;
+  }
+
+  table.table-primary tbody tr:last-child td:last-child {
+    @apply rounded-br-2xl;
+  }
+}
+
+/* th {
+  background-color: green;
+  color: #fff !important;
+  margin: 0 !important;
+}
+
+th {
+  padding-top: 0.6rem !important;
+  padding-bottom: 0.6rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  font-size: 13px !important;
+} */
+
+/* tr,
+td {
+  padding-top: 0.6rem !important;
+  padding-bottom: 0.6rem !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  font-size: 12px !important;
+} */
+
+/* thead th:first-child {
+  border-top-left-radius: 5px !important;
+}
+
+thead th:last-child {
+  border-top-right-radius: 5px !important;
+} */
+
+/* tbody {
+  background-color: white !important;
+} */
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px !important;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px !important;
+}
+
+table.custom-table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-radius: 10px !important;
+}

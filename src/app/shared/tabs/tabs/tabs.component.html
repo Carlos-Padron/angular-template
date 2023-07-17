@@ -1,0 +1,13 @@
+<div class="">
+  <div class="tabs tabs-boxed w-fit">
+    <a
+      *ngFor="let tab of tabsHeader; let i = index"
+      class="tab"
+      [ngClass]="{ 'tab-active': i === activeTabIndex }"
+    >
+      <i *ngIf="tab?.icon" class="{{ tab.icon }}"></i>
+      <span>{{ tab.name }}</span>
+    </a>
+  </div>
+  <ng-content> </ng-content>
+</div>

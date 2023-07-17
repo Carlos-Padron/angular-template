@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+// <!-- https://angular-material.fusetheme.com/ui/material-components -->
 
 @Component({
   selector: 'app-sidebar',

@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
 
   @Input() color = 'bg-base-100'
-  @Input() shadow = 'md'
+  @Input() shadow = 'shadow-md'
   @Input() width = 'w-auto'
   @Input() height = 'h-auto'
 

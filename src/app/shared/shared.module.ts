@@ -6,7 +6,7 @@ import { LoadingModalComponent } from './loading-modal/loading-modal.component';
 import { ModalComponent } from './modal/modal.component';
 import { CollapseComponent } from './collapse/collapse.component';
 import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
-import { TabsComponent } from './tabs/tabs.component';
+import { TabsComponent } from './tabs/tabs/tabs.component';
 
 @NgModule({
   declarations: [
