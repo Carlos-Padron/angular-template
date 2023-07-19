@@ -7,6 +7,7 @@ import { ModalComponent } from './modal/modal.component';
 import { CollapseComponent } from './collapse/collapse.component';
 import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
 import { TabsComponent } from './tabs/tabs/tabs.component';
+import { FormCardComponent } from './form-card/form-card.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TabsComponent } from './tabs/tabs/tabs.component';
     CollapseComponent,
     ConfirmationModalComponent,
     TabsComponent,
+    FormCardComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -27,6 +29,7 @@ import { TabsComponent } from './tabs/tabs/tabs.component';
     CollapseComponent,
     ConfirmationModalComponent,
     TabsComponent,
+    FormCardComponent,
   ],
 })
 export class SharedModule {}

@@ -1,12 +1,13 @@
 <div class="drawer drawer-mobile">
   <input id="drawer-input" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col">
+  <!-- style="overflow: auto;" -->
+  <div class="drawer-content">
     <app-navbar></app-navbar>
     <div class="page">
       <router-outlet></router-outlet>
     </div>
   </div>
-  <div class="drawer-side">
+  <div class="drawer-side" style="z-index: 2">
     <label for="drawer-input" class="drawer-overlay"></label>
     <div class="bg-secondary w-80 h-full text-base-content p-0 flex flex-col">
       <div class="flex p-4 pb-0 items-center h-20">

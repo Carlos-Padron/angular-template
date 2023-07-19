@@ -4,28 +4,40 @@
 @tailwind utilities;
 
 .page {
-  margin: 2.5rem;
-  width: calc(100vw - 5rem);
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  min-height: 100vh;
+  padding-top: 3.5rem;
+}
+
+.form-wrapper {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
 
 /* Tables */
 
 @layer utilities {
+  /* Tables */
   table.table-primary {
-    @apply border-separate border-spacing-0 rounded-2xl shadow-md;
+    @apply border-separate border-spacing-0 rounded-2xl shadow-md pt-14;
   }
 
   table.table-primary thead {
-    @apply h-14
+    @apply h-14;
   }
 
   table.table-primary th {
-    @apply bg-primary text-white m-0 p-3;
+    @apply bg-primary text-white m-0 p-3 px-6;
   }
 
   table.table-primary tr,
   table.table-primary td {
-    @apply p-3;
+    @apply p-3 px-6;
+  }
+
+  table.table-primary td {
+    @apply border-b border-gray-200 border-solid;
   }
 
   table.table-primary thead th:first-child {
@@ -45,51 +57,12 @@
   }
 }
 
-/* th {
-  background-color: green;
-  color: #fff !important;
-  margin: 0 !important;
-}
+@layer components {
+  .table-wrapper {
+    @apply overflow-x-auto mt-10 shadow-md rounded-2xl overflow-y-hidden;
+  }
 
-th {
-  padding-top: 0.6rem !important;
-  padding-bottom: 0.6rem !important;
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-  font-size: 13px !important;
-} */
-
-/* tr,
-td {
-  padding-top: 0.6rem !important;
-  padding-bottom: 0.6rem !important;
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-  font-size: 12px !important;
-} */
-
-/* thead th:first-child {
-  border-top-left-radius: 5px !important;
-}
-
-thead th:last-child {
-  border-top-right-radius: 5px !important;
-} */
-
-/* tbody {
-  background-color: white !important;
-} */
-
-tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 5px !important;
-}
-
-tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 5px !important;
-}
-
-table.custom-table {
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  border-radius: 10px !important;
+  .input {
+    @apply focus:border-primary focus:outline-none;
+  }
 }
